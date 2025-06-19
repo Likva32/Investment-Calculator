@@ -1,0 +1,14 @@
+header {
+  text-align: center;
+  margin: 48px 0px;
+}
+
+header img {
+  width: 10vw;
+  height: 10vh;
+  object-fit: contain;
+}
+
+header h1 {
+  font-size: 24px;
+}
