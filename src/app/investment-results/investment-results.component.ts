@@ -11,7 +11,7 @@ export class InvestmentResultsComponent {
 
   constructor(private investmentResultService: InvestmentResultService) { }
 
-  get InvestmentResults(): InvestmentResult[] {
+  public get InvestmentResults(): InvestmentResult[] {
     return this.investmentResultService.investmentResult;
   }
 }

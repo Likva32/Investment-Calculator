@@ -34,7 +34,7 @@ form input {
 
 form input:focus {
   border-color: transparent;
-  outline: none; /* optional: removes the blue focus ring */
+  outline: none;
 }
 
 form button {

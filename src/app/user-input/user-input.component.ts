@@ -15,7 +15,7 @@ export class UserInputComponent {
 
   constructor(private investmentService: InvestmentResultService) { }
 
-  onSubmit(): void {
+  public onSubmit(): void {
     this.investmentService.calculateInvestmentResults({
       initialInvestment: this.initialInvestment,
       annualInvestment: this.annualInvestment,
