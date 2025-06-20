@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { InvestmentResultService } from './investment-result.service';
+import { InvestmentResult } from './investment-result.model';
 
 @Component({
   selector: 'app-investment-results',
   templateUrl: './investment-results.component.html',
   styleUrls: ['./investment-results.component.css']
 })
-export class InvestmentResultsComponent implements OnInit {
+export class InvestmentResultsComponent {
 
-  constructor() { }
+  constructor(private investmentResultService: InvestmentResultService) { }
 
-  ngOnInit(): void {
+  get InvestmentResults(): InvestmentResult[] {
+    return this.investmentResultService.investmentResult;
   }
-
 }
